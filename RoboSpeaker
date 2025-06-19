@@ -1,0 +1,14 @@
+import pyttsx3
+
+system = pyttsx3.init() 
+while True:
+    text = input("Enter something to speak: ")
+    
+    if(text=="q"):
+        system.say("bye bye friends:")
+        system.runAndWait()
+        break
+    system.say(text)
+    system.runAndWait()
+
+  
